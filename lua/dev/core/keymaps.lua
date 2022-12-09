@@ -27,3 +27,6 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previos tab
 
 -- TELESCOPE 
 keymap.set("n", "<leader>T", ":Telescope find_files<CR>")
+
+-- FILES TREE
+keymap.set("n", "<leader>tr", ":NvimTreeFocus<CR>")
