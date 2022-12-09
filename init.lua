@@ -1,0 +1,5 @@
+require("dev.plugins-setup")
+require("dev.core.options")
+require("dev.core.keymaps")
+require("dev.core.colorscheme")
+require("dev.plugins.nvim-tree")
