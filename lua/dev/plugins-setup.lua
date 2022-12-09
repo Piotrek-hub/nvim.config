@@ -33,6 +33,9 @@ return packer.startup(function(use)
 
   use("nvim-tree/nvim-tree.lua")
 
+  -- Telescope 
+  use("nvim-telescope/telescope.nvim")
+  use("nvim-lua/plenary.nvim")
   if packer_bootstrap then 
     require("packer").sync()
   end 
