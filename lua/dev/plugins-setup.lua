@@ -25,7 +25,7 @@ end
 
 return packer.startup(function(use)
   use("wbthomas/packer.nvim")
-  
+
   use("bluz71/vim-nightfly-guicolors")
   use("rktjmp/lush.nvim")
 
@@ -36,6 +36,10 @@ return packer.startup(function(use)
   -- Telescope 
   use("nvim-telescope/telescope.nvim")
   use("nvim-lua/plenary.nvim")
+
+  -- Icons 
+  use("kyazdani42/nvim-web-devicons")
+
   if packer_bootstrap then 
     require("packer").sync()
   end 
