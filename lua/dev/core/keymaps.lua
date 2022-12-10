@@ -26,7 +26,8 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previos tab
 
 -- TELESCOPE 
-keymap.set("n", "<leader>t", ":Telescope find_files<CR>")
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
+keymap.set("n", "<leader>fs", ":Telescope live_grep<CR>")
 
 -- FILES TREE
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")

@@ -34,11 +34,25 @@ return packer.startup(function(use)
   use("nvim-tree/nvim-tree.lua")
 
   -- Telescope 
-  use("nvim-telescope/telescope.nvim")
+  use({"nvim-telescope/telescope.nvim", branch = "0.1.x"})
+  use({"nvim-telescope/telescope-fzf-native.nvim", run = "make"})
   use("nvim-lua/plenary.nvim")
+
+  -- Autocompletion
+  use("hrsh7th/nvim-cmp")
+  use("hrsh7th/cmp-buffer")
+  use("hrsh7th/cmp-path")
+
+  -- snippets 
+  use("L3MON4D3/LuaSnip")
+  use("saadparwaiz1/cmp_luasnip")
+  use("rafamadriz/friendly-snippets")
 
   -- Icons 
   use("kyazdani42/nvim-web-devicons")
+
+  -- statusline 
+  use("nvim-lualine/lualine.nvim")
 
   if packer_bootstrap then 
     require("packer").sync()
